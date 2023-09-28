@@ -48,14 +48,14 @@
                     <td>{{ $item->nombre }}</td>
                     <td>{{ $item->fecha_nacimiento }}</td>
                     <td>
-                        <form action="">
+                        <form action="{{ route("Personas.edit", $item->id) }}" method="GET">
                             <button class="btn btn-warning btn-sm">
                                 <span class="fa-solid fa-user-pen"></span>
                             </button>
                         </form>
                     </td>
                     <td>
-                        <form action="">
+                        <form action="{{ route("Personas.show",$item->id) }}" method="GET">
                             <button class="btn btn-danger btn-sm">
                             <span class="fa-solid fa-user-xmark"></span>
                             </button>
