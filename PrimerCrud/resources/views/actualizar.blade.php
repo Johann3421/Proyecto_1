@@ -5,7 +5,7 @@
 @section('contenido')
 <div class="card">
   <div class="card-header">
-    Agregar Nueva Persona
+    Actualizar Nueva Persona
   </div>
   <div class="card-body">
 
@@ -21,7 +21,7 @@
             <input type="date" name="fecha_nacimiento" class="form-control" required>
             <br>
             <a href="{{ route("Personas.index") }}" class="btn btn-secondary">Regresar</a>
-            <button class="btn btn-primary">Agregar</button>
+            <button class="btn btn-warning">Actualizar</button>
             
         </form>
     </p>

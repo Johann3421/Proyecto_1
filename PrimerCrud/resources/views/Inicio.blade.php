@@ -9,7 +9,7 @@
     CRUD con laravel 10 y MySQL
   </div>
   <div class="card-body">
-    <h5 class="card-title">Listado de personas en sistema</h5>
+    <h5 class="card-title text-center">Listado de personas en sistema</h5>
     <p>
         <a href="{{ route("Personas.create")}}" class="btn btn-primary">Agregar nueva Persona</a>
     </p>
