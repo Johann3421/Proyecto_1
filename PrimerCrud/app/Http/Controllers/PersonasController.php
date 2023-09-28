@@ -36,10 +36,12 @@ class PersonasController extends Controller
     }
 
     
-    public function show(Personas $personas)
+    public function show($id)
     {
         //servira para obtener un registro de nuestra tabla
-        return view('eliminar');
+        $persona = Personas::find($id);
+        return view("eliminar",compact('persona'));
+        
     }
 
     

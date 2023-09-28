@@ -13,7 +13,7 @@
     <div class="alert alert-danger" role="alert">
         Estas seguro de eliminar este registro!!!
 
-        <table class="table table-sm table-hover">
+        <table class="table table-sm table-hover table-borderer" style="background-color: white">
             <thead>
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -22,15 +22,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ $persona ->paterno}}</td>
+                    <td>{{ $persona ->materno}}</td>
+                    <td>{{ $persona ->nombre}}</td>
+                    <td>{{ $persona ->fecha_nacimiento}}</td>
                 </tr>
             </tbody>
         </table>
         <hr>
-        <form action="">
+        <form action="{{ route('Personas.destroy', $persona->id) }}">
         <a href="{{ route("Personas.index") }}" class="btn btn-secondary">
                 <span class="fa-solid fa-rotate-left"></span> Regresar</a>
             <button class="btn btn-danger"> <span class="fa-solid fa-user-xmark"></span> Eliminar</button>
