@@ -11,7 +11,7 @@ class PersonasController extends Controller
     {
         // Tu lógica aquí
         
-        return view('welcome');
+        return view('Inicio');
     }
 
    
@@ -37,6 +37,7 @@ class PersonasController extends Controller
     public function edit(Personas $personas)
     {
         //este metodo nos sirve para traer los datos que se van a editar y los coloca en el formulario
+        return "Aqui se actualiza";
     }
 
     
