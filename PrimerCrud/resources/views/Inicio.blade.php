@@ -10,13 +10,28 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">Listado de personas en sistema</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p>
+        <a href="{{ route("Personas.create")}}">Agregar nueva Persona</a>
+    </p>
+    <p class="card-text">
+    <div class="table table-responsive">
+        <table class="table table-sm table-bordered">
+            <thead>
+                <td>Apellido Paterno</td>
+                <td>Apellido Materno</td>
+                <td>Nombre</td>
+                <td>Fecha de Nacimiento</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
   </div>
 </div>
-    <div class="row">
-        <h1>Hola usando layouts</h1>
-        <i class="fa-solid fa-house"></i>
-        <a href="{{ route('Personas.create')}}">Agregar</a>
-    </div>
 @endsection
