@@ -18,7 +18,7 @@ class PersonasController extends Controller
     public function create()
     {
         //el formulario donde nosotros agregaremos datos
-        return "aqui puedes agregar";
+        return view('agregar');
     }
 
     

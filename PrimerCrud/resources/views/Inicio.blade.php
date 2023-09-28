@@ -3,7 +3,7 @@
 @section('tituloPagina','Crud con Laravel')
 
 @section('contenido')
-<br><br>
+
 <div class="card">
   <div class="card-header">
     CRUD con laravel 10 y MySQL
@@ -32,9 +32,9 @@
             
                 <tr>
                     <td>{{ $item->paterno }}</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ $item->materno }}</td>
+                    <td>{{ $item->nombre }}</td>
+                    <td>{{ $item->fecha_nacimiento }}</td>
                     <td></td>
                     <td></td>
                 </tr>
