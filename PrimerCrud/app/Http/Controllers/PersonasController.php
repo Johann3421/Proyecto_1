@@ -10,7 +10,7 @@ class PersonasController extends Controller
     public function index()
     {
         // Tu lógica aquí
-        $datos = Personas::all();
+        $datos = Personas::orderBy('paterno','desc')->paginate(2);
         return view('Inicio',compact('datos'));
     }
 
@@ -67,8 +67,12 @@ class PersonasController extends Controller
     }
 
     
-    public function destroy(Personas $personas)
+    public function destroy($id)
+
     {
         //elimina un registro
+        $personas = Personas::find($id);
+        $personas->delete();
+        return redirect()->route("Personas.index")->with("succes", "Eliminado con exito");
     }
 }

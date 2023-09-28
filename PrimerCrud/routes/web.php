@@ -19,3 +19,4 @@ Route::post('/store', [PersonasController::class,'store'])->name('Personas.store
 Route::get('/edit/{id}', [PersonasController::class,'edit'])->name('Personas.edit');
 Route::put('/update/{id}', [PersonasController::class,'update'])->name('Personas.update');
 Route::get('/show/{id}', [PersonasController::class,'show'])->name('Personas.show');
+Route::delete('/destroy/{id}', [PersonasController::class,'destroy'])->name('Personas.destroy');

@@ -30,7 +30,9 @@
             </tbody>
         </table>
         <hr>
-        <form action="{{ route('Personas.destroy', $persona->id) }}">
+        <form action="{{ route('Personas.destroy', $persona->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
         <a href="{{ route("Personas.index") }}" class="btn btn-secondary">
                 <span class="fa-solid fa-rotate-left"></span> Regresar</a>
             <button class="btn btn-danger"> <span class="fa-solid fa-user-xmark"></span> Eliminar</button>

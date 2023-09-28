@@ -29,7 +29,7 @@
     
     <p class="card-text">
     <div class="table table-responsive">
-        <table class="table table-sm table-bordered">
+        <table class="table table-sm">
             <thead>
                 <th>Apellido Paterno</th>
                 <th>Apellido Materno</th>
@@ -66,6 +66,12 @@
             @endforeach
             </tbody>
         </table>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12">
+                {{ $datos->links() }}
+            </div>
+        </div>
     </div>
   </div>
 </div>
