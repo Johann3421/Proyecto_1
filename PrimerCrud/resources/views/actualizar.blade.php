@@ -20,8 +20,9 @@
             <label for="">Fecha de Nacimiento</label>
             <input type="date" name="fecha_nacimiento" class="form-control" required>
             <br>
-            <a href="{{ route("Personas.index") }}" class="btn btn-secondary">Regresar</a>
-            <button class="btn btn-warning">Actualizar</button>
+            <a href="{{ route("Personas.index") }}" class="btn btn-secondary">
+                <span class="fa-solid fa-rotate-left"></span> Regresar</a>
+            <button class="btn btn-warning"> <span class="fa-solid fa-user-plus"></span> Actualizar</button>
             
         </form>
     </p>

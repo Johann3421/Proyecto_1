@@ -11,7 +11,7 @@
   <div class="card-body">
     <h5 class="card-title text-center">Listado de personas en sistema</h5>
     <p>
-        <a href="{{ route("Personas.create")}}" class="btn btn-primary">Agregar nueva Persona</a>
+        <a href="{{ route("Personas.create")}}" class="btn btn-primary"><span class="fa-solid fa-user-plus"></span> Agregar nueva Persona</a>
     </p>
     <hr>
     
@@ -35,8 +35,20 @@
                     <td>{{ $item->materno }}</td>
                     <td>{{ $item->nombre }}</td>
                     <td>{{ $item->fecha_nacimiento }}</td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <form action="">
+                            <button class="btn btn-warning btn-sm">
+                                <span class="fa-solid fa-user-pen"></span>
+                            </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="">
+                            <button class="btn btn-danger btn-sm">
+                            <span class="fa-solid fa-user-xmark"></span>
+                            </button>
+                        </form>
+                    </td>
                 </tr>
 
             @endforeach

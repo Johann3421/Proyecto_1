@@ -31,6 +31,7 @@ class PersonasController extends Controller
     public function show(Personas $personas)
     {
         //servira para obtener un registro de nuestra tabla
+        return view('eliminar');
     }
 
     
