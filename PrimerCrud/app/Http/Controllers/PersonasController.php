@@ -25,6 +25,14 @@ class PersonasController extends Controller
     public function store(Request $request)
     {
         //Sirve para guardar datos en la bd
+        $personas = new Personas();
+        $personas->paterno = $request->post('paterno');
+        $personas->materno = $request->post('materno');
+        $personas->nombre = $request->post('nombre');
+        $personas->fecha_nacimiento = $request->post('fecha_nacimiento');
+        $personas->save();
+
+        return redirect()->route('Personas.index')->with("succes","Agregado con exito!");
     }
 
     

@@ -9,6 +9,18 @@
     CRUD con laravel 10 y MySQL
   </div>
   <div class="card-body">
+    <div class="row">
+        <div class="col-sm-12">
+            @if($mensaje = Session::get('succes') )
+
+            <div class="alert alert-success" role="alert">
+                {{ $mensaje }}
+        </div>
+            @endif
+
+        
+        </div>
+    </div>
     <h5 class="card-title text-center">Listado de personas en sistema</h5>
     <p>
         <a href="{{ route("Personas.create")}}" class="btn btn-primary"><span class="fa-solid fa-user-plus"></span> Agregar nueva Persona</a>
