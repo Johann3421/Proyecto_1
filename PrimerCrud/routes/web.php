@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PersonasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,5 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PersonasController::class,'index'])->name('Personas.index');
+Route::get('/create', [PersonasController::class,'create'])->name('Personas.create');
