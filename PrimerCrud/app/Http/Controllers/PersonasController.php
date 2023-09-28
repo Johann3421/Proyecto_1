@@ -10,8 +10,8 @@ class PersonasController extends Controller
     public function index()
     {
         // Tu lógica aquí
-        
-        return view('Inicio');
+        $datos = Personas::all();
+        return view('Inicio',compact('datos'));
     }
 
    
